@@ -5,6 +5,7 @@ public class Frequency {
     /*
     Aylin Bekem
     Engin Bekem
+    Arin Bekem
 	1. write a return method called frequency that accepts two parameters: string str and char ch,
 		the method returns the frequency of the ch from the str as an int
 			Ex:
