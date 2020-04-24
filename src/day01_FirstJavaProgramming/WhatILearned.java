@@ -22,7 +22,7 @@ public class WhatILearned {
                 "contains the necessary libraries and resources\n" +
                 "JDK: Java Development kit\n  " +
                 "  contains tools such as compiler");
-        System.out.println("Main method is runs the codes as java application");
+
         System.out.println("src folder: contains packages");
         System.out.println("class: where we write our java codes");
         System.out.println("print method: prints the output on console");

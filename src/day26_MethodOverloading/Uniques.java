@@ -15,7 +15,7 @@ public class Uniques {
 
         for (int i = 0; i < Str.length(); i++) {
 
-            int num = frequency(Str, Str.charAt(i));
+            int num = Frequency(Str, Str.charAt(i));
             if (num == 1) {
                 result += Str.charAt(i);
             }
@@ -34,7 +34,7 @@ public class Uniques {
 
         for (int i = 0; i < Str.length(); i++) {
 
-            int num = frequency(Str, Str.charAt(i));
+            int num = Frequency(Str, Str.charAt(i));
             if (num == 1) {
                 result += Str.charAt(i);
             }
@@ -43,7 +43,7 @@ public class Uniques {
     }
 
 
-    public static int frequency(String str, char ch) {//how many times this cars occurres in the string
+    public static int Frequency(String str, char ch) {//how many times this cars occurres in the string
 
         char[] charr = str.toCharArray();//{A, A, A}
         int count = 0;

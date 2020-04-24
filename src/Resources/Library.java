@@ -1,5 +1,7 @@
 package Resources;
+
 import java.util.*;
+
 public class Library {
     public static int[] sortDesending(int[] arr) {
         Arrays.sort(arr);  // {1,2,3,4};  ==> {4,3,2,1};
@@ -57,7 +59,43 @@ public class Library {
         return result;
     }
 
+    public static int Frequency(String str, char ch) {//how many times this cars occurres in the string
 
+        char[] charr = str.toCharArray();//{A, A, A}
+        int count = 0;
+        for (char each : charr) {
+            if (each == ch) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public static String Uniques(String Str) {
+
+        String result = "";
+
+        for (int i = 0; i < Str.length(); i++) {
+
+            int num = Frequency(Str, Str.charAt(i));
+            if (num == 1) {
+                result += Str.charAt(i);
+            }
+        }
+        return result;
+    }
+
+    public static int minimum(int[] arr) {
+        int minimum = arr[0];
+        for (int each : arr) {
+
+            if (each < minimum) {
+                minimum = each;
+            }
+
+        }
+        return minimum;
+    }
 
 
 }
